@@ -1,931 +1,160 @@
-/* Número de usuarios actuales de tu Tienda Online */
-.num-usuarios{
+/* Sección Reportes Gráficos */
+.sect-graphic-reports{
     display: flex;
     width: 100%;
-    height: 1000px;
-    background-color: white;
-    border: 1px solid black;
-    margin-top: 30px;
+    height: auto;
+    margin: 2rem 0 0;
     flex-direction: column;
 }
 
-    /* Imagen Estadística */
-    .num-usuarios img{
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Usuarios */
-    .usuarios{
-        display: flex;
-        width: 100%;
-        height: 35px;
-        background-color: #212EC2;
-        border: 1px solid black;
-        border-left: 0;
-        border-right: 0;
-        margin-bottom: 0px;
-        justify-content: space-between;
-        left: 0;
-        align-items: center;
-    }
-
-    .usuarios h2{
-        color: white;
-        font-size: 20px;
-        margin: 5px 20px;
-    }
-
-    /* Número de usuarios */
-    .num{
-        display: flex;
-        width: 65px;
-        height: 28px;
-        background-color: white;
-        border: 1px solid black;
-        align-items: center;
-        justify-content: center;
-        margin-right: 20px;
-    }
-
-    .num h2{
-        color: black;
-        font-size: 18px;
-    }
-
-/* Visitas diarias de tu sitio web */
-.visitas-diarias{
+/* Fila de gráficos */
+.row-graphics{
     display: flex;
     width: 100%;
-    height: 1000px;
-    background-color: white;
-    border: 1px solid black;
-    margin-top: 60px;
-    align-items: start;
-    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    margin: 0 0 2rem;
 }
 
-    /* Imagen Estadística */
-    .visitas-diarias img{
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Visitas */
-    .visitas{
-        display: flex;
-        width: 100%;
-        height: 35px;
-        background-color: #212EC2;
-        border: 1px solid black;
-        border-left: 0;
-        border-right: 0;
-        align-items: center;
-        margin-bottom: 0px;
-        justify-content: space-between;
-    }
-
-    .visitas h2{
-        color: white;
-        font-size: 20px;
-        margin: 5px 20px;
-    }
-
-    /* Número de visitas */
-    .num{
-        display: flex;
-        width: 65px;
-        height: 28px;
-        background-color: white;
-        border: 1px solid black;
-        align-items: center;
-        justify-content: center;
-        margin-right: 20px;
-    }
-
-    .num h2{
-        color: black;
-        font-size: 18px;
-    }
-
-/* Productos más vendidos esta semana */
-.prod_mas_vendidos{
-    display: flex;
-    width: 100%;
-    height: 1700px;
+/* Contenedor de Gráfico */
+.cont-graph{
+    flex-direction: column;
+    padding: 4rem 3rem 4rem;
     background-color: #D9D9D9;
-    border: 1px solid black;
-    margin-top: 60px;
-    flex-direction: column;
-}
-
-    /* Texto productos */
-    .texto-productos{
-        display: flex;
-        width: 100%;
-        height: 35px;
-        background-color: #212EC2;
-        border: 1px solid black;
-        border-left: 0;
-        border-right: 0;
-        margin-top: 20px;
-        justify-content: space-between;
-        left: 0;
-    }
-
-    .texto-productos h2{
-        color: white;
-        font-size: 20px;
-        margin: 5px 20px;
-    }
-
-/* Productos */
-.productos{
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 80%;
+    border-radius: 2rem;
 }
 
-    /* Contenedor productos 1*/
-    .cont-productos1{
-        display: flex;
-        width: 92.5%;
-        height: 100%;
-        margin-top: 80px;
-        align-self: center;
-        justify-content: center;
-        margin-bottom: 40px;
+    .cont-graph h2{
+        font-size: 22.5px;
+        font-weight: lighter;
     }
 
-        /* Contenedor de producto */
-        .contenedor_de_producto{
-            display: flex;
-            height: 100%;
-            width: 33.33%;
-            justify-content: space-between;
-        }
+/* Contenedor Rectangular */
+.cont-width-small{
+    display: flex;
+    width: 35%;
+    height: 550px;
+}
 
-            .contenedor_de_producto img{
-                height: 100%;
-                width: 45%;
-                border: 1px solid black;
-            }
+/* Contenedor Cuadrado */
+.cont-width-big{
+    width: 62.5%;
+    height: 550px;
+}
 
-            .info-prod{
-                flex-direction: column;
-                width: 100%;
-            }
+.chart-35,
+.chart-62{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-            /*Nombre producto */
-            .nombre-prod{
-                height: 50px;
-                margin-top: 50px;
-                align-items: center;
-            }
+.chart-35{
+    margin: 1rem 0 0;
+}
 
-            .nombre-prod h1{
-                font-size: 20px;
-                margin-left: 15px;
-            }
+.chart-62{
+    margin: 0 0 2rem;
+}
 
-            /* Información de producto para compra */
-            .info-compra{
-                margin-top: 40px;
-                list-style: none;
-                margin-left: 15px;
-            }
-
-            .info-compra li{
-                font-size: 15px;
-            }
-
-    /* Contenedor productos 2*/
-    .cont-productos2{
-        display: flex;
-        width: 92.5%;
-        height: 100%;
-        margin-top: 40px;
-        align-self: center;
-        justify-content: center;
+/* Responsive 1440px */
+@media (max-width: 1440px){
+    .cont-graph{
+        padding: 2.5rem 2rem 2.5rem;
     }
 
-        /* Contenedor de producto */
-        .contenedor_de_producto{
-            display: flex;
-            height: 100%;
-            width: 33.33%;
-            justify-content: space-between;
-        }
-
-            .contenedor_de_producto img{
-                height: 100%;
-                width: 45%;
-                border: 1px solid black;
-            }
-
-            .info-prod{
-                flex-direction: column;
-                width: 100%;
-            }
-
-            /*Nombre producto */
-            .nombre-prod{
-                height: 50px;
-                margin-top: 50px;
-                align-items: center;
-            }
-
-            .nombre-prod h1{
-                font-size: 20px;
-                margin-left: 15px;
-            }
-
-            /* Información de producto para compra */
-            .info-compra{
-                margin-top: 40px;
-                list-style: none;
-                margin-left: 15px;
-            }
-
-            .info-compra li{
-                font-size: 15px;
-            }
-
-    /* Contenedor 3  Responsive Productos */
-    .cont-productos3{
-        display: none;
+    .cont-graph h2{
+        font-size: 18px;
     }
 
-/* @Media */
-    /* @Media 1024px */
-    @media(max-width: 1024px){
-        /* Número de usuarios actuales de tu Tienda Online */
-        .num-usuarios{
-            display: flex;
-            width: 100%;
-            height: 15%;
-            background-color: white;
-            border: 1px solid black;
-            margin-top: 30px;
-            align-items: start;
-            flex-direction: column;
-        }
+    .cont-width-big,
+    .cont-width-small{
+        max-height: 450px;
+    }
+}
 
-            /* Imagen Estadística */
-            .num-usuarios img{
-                width: 100%;
-                height: 100%;
-            }
-
-            /* Usuarios */
-            .usuarios{
-                display: flex;
-                width: 100%;
-                height: 35px;
-                background-color: #212EC2;
-                border: 1px solid black;
-                margin-bottom: 0px;
-                justify-content: space-between;
-                left: 0;
-            }
-
-            .usuarios h2{
-                color: white;
-                font-size: 17px;
-                margin: 5px 20px;
-            }
-
-            .num{
-                display: flex;
-                width: 60px;
-                height: 25px;
-                background-color: white;
-                border: 1px solid black;
-                align-items: center;
-                justify-content: center;
-                margin-right: 20px;
-                margin-top: 2.5px;
-            }
-
-            .num h2{
-                color: black;
-                font-size: 15px;
-            }
-
-        /* Visitas diarias de tu sitio web */
-        .visitas-diarias{
-            display: flex;
-            width: 100%;
-            height: 15%;
-            background-color: white;
-            border: 1px solid black;
-            margin-top: 60px;
-            align-items: start;
-            flex-direction: column;
-        }
-
-            /* Imagen Estadística */
-            .visitas-diarias img{
-                width: 100%;
-                height: 100%;
-            }
-
-            /* Visitas */
-            .visitas{
-                display: flex;
-                width: 100%;
-                height: 35px;
-                background-color: #212EC2;
-                border: 1px solid black;
-                align-items: center;
-                margin-bottom: 0px;
-                justify-content: space-between;
-            }
-
-            .visitas h2{
-                color: white;
-                font-size: 17px;
-                margin: 5px 20px;
-            }
-
-            /* Número de visitas */
-            .num{
-                display: flex;
-                width: 60px;
-                height: 25px;
-                background-color: white;
-                border: 1px solid black;
-                align-items: center;
-                justify-content: center;
-                margin-right: 20px;
-            }
-
-            .num h2{
-                color: black;
-                font-size: 15px;
-            }
-
-        /* Productos más vendidos esta semana */
-        .prod_mas_vendidos{
-            display: flex;
-            width: 100%;
-            height: 550px;
-            background-color: #D9D9D9;
-            border: 1px solid black;
-            margin-top: 60px;
-            flex-direction: column;
-        }
-
-            /* Texto productos */
-            .texto-productos{
-                display: flex;
-                width: 100%;
-                height: 35px;
-                background-color: #212EC2;
-                border: 1px solid black;
-                border-left: 0;
-                border-right: 0;
-                margin-top: 20px;
-                justify-content: space-between;
-                left: 0;
-            }
-
-            .texto-productos h2{
-                color: white;
-                font-size: 20px;
-                margin: 5px 20px;
-            }
-
-        /* Productos */
-        .productos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            height: 80%;
-        }
-
-            /* Contenedor productos 1*/
-            .cont-productos1{
-                display: none;
-            }
-
-            /* Contenedor productos 2 */
-            .cont-productos2{
-                display: none;
-            }
-
-    /* Contenedor Responsive productos 3*/
-    .cont-productos3{
-        display: flex;
-        width: 92.5%;
-        height: 50%;
-        margin-top: 30px;
-        align-self: center;
-        justify-content: center;
+/* Responsive 1024px */
+@media (max-width: 1024px){
+    .sect-graphic-reports{
+        margin: 0;
     }
 
-        .cont-productos3{
-            display: none;
-        }
-
-        /* Contenedor Responsive productos 3*/
-        .cont-productos1{
-            display: flex;
-            width: 92.5%;
-            height: 50%;
-            margin-top: 30px;
-            align-self: center;
-            justify-content: center;
-        }
-        .cont-productos2{
-            display: flex;
-            width: 92.5%;
-            height: 50%;
-            margin-top: 30px;
-            align-self: center;
-            justify-content: center;
-        }
-
-        /* Contenedor de producto */
-        .contenedor_de_producto{
-            display: flex;
-            height: 100%;
-            width: 33.33%;
-            justify-content: space-between;
-        }
-
-            .contenedor_de_producto img{
-                height: 100%;
-                width: 50%;
-                border: 1px solid black;
-            }
-
-            .info-prod{
-                flex-direction: column;
-                width: 100%;
-            }
-
-            /*Nombre producto */
-            .nombre-prod{
-                height: 50px;
-                margin-top: 30px;
-                align-items: center;
-            }
-
-            .nombre-prod h1{
-                font-size: 14px;
-                margin-left: 12px;
-            }
-
-            /* Información de producto para compra */
-            .info-compra{
-                margin-top: 40px;
-                list-style: none;
-                margin-left: 12px;
-            }
-
-            .info-compra li{
-                font-size: 11px;
-            }
-
-        /* Texto productos */
-        .texto-productos{
-            display: flex;
-            width: 100%;
-            height: 30px;
-            background-color: #212EC2;
-            border: 1px solid black;
-            border-left: 0;
-            border-right: 0;
-            margin-top: 20px;
-            justify-content: space-between;
-            left: 0;
-        }
-
-        .texto-productos h2{
-            color: white;
-            font-size: 17px;
-            margin: 5px 20px;
-        }
+    .row-graphics{
+        flex-direction: column-reverse;
     }
 
-    /* @Media 768px */
-    @media(max-width: 768px){
-        /* Número de usuarios actuales de tu Tienda Online */
-        .num-usuarios{
-            display: flex;
-            width: 100%;
-            height: 10%;
-            background-color: white;
-            border: 1px solid black;
-            margin-top: 30px;
-            align-items: start;
-            flex-direction: column;
-        }
+    .cont-graph{
+        min-height: 500px;
+        margin: 2rem 0 0;
+        border-radius: 1.5rem;
+    }
 
-            /* Imagen Estadística */
-            .num-usuarios img{
-                width: 100%;
-                height: 100%;
-            }
-
-            /* Usuarios */
-            .usuarios{
-                display: flex;
-                width: 100%;
-                height: 35px;
-                background-color: #212EC2;
-                border: 1px solid black;
-                margin-bottom: 0px;
-                justify-content: space-between;
-                align-items: center;
-                left: 0;
-            }
-
-            .usuarios h2{
-                color: white;
-                font-size: 12px;
-                margin: 5px 20px;
-            }
-
-            .num{
-                display: flex;
-                width: 45px;
-                height: 25px;
-                background-color: white;
-                border: 1px solid black;
-                align-items: center;
-                justify-content: center;
-                margin-right: 20px;
-                margin-top: 0;
-            }
-
-            .num h2{
-                color: black;
-                font-size: 13px;
-            }
-
-        /* Visitas diarias de tu sitio web */
-        .visitas-diarias{
-            display: flex;
-            width: 100%;
-            height: 10%;
-            background-color: white;
-            border: 1px solid black;
-            margin-top: 60px;
-            flex-direction: column;
-            align-items: center;
-        }
-
-            /* Imagen Estadística */
-            .visitas-diarias img{
-                width: 100%;
-                height: 100%;
-            }
-
-            /* Visitas */
-            .visitas{
-                display: flex;
-                width: 100%;
-                height: 35px;
-                background-color: #212EC2;
-                border: 1px solid black;
-                align-items: center;
-                margin-bottom: 0px;
-                justify-content: space-between;
-            }
-
-            .visitas h2{
-                color: white;
-                font-size: 12px;
-                margin: 5px 20px;
-            }
-
-            .num h2{
-                color: black;
-                font-size: 13px;
-            }
-
-    /* Productos más vendidos esta semana */
-    .prod_mas_vendidos{
-        display: flex;
+    .cont-width-big,
+    .cont-width-small{
         width: 100%;
-        height: 420px;
-        background-color: #D9D9D9;
-        border: 1px solid black;
-        margin-top: 60px;
-        flex-direction: column;
+        padding: 3rem 6rem 3rem;
     }
 
-        /* Productos */
-        .productos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            height: 70%;
-            flex-direction: column;
-        }
+    .chart-35{
+        max-height: 100%;
+        margin: 0.5rem 1rem 2rem;
+    }
+}
 
-            /* Contenedor Responsive productos 3*/
-            .cont-productos1{
-                display: flex;
-                width: 92.5%;
-                height: 50%;
-                margin-top: 30px;
-                align-self: center;
-                justify-content: center;
-            }
-
-            .cont-productos2{
-                display: flex;
-                width: 92.5%;
-                height: 50%;
-                margin-top: 30px;
-                align-self: center;
-                justify-content: center;
-            }
-
-            .cont-productos3{
-                display: none;
-            }
-
-                /* Contenedor de producto */
-                .contenedor_de_producto{
-                    display: flex;
-                    height: 100%;
-                    width: 33.33%;
-                    justify-content: space-between;
-                }
-
-                    .contenedor_de_producto img{
-                        height: 100%;
-                        width: 50%;
-                        border: 1px solid black;
-                    }
-
-                    .info-prod{
-                        flex-direction: column;
-                        width: 100%;
-                    }
-
-                    /*Nombre producto */
-                    .nombre-prod{
-                        height: 50px;
-                        margin-top: 20px;
-                        align-items: center;
-                    }
-
-                    .nombre-prod h1{
-                        font-size: 10px;
-                        margin-left: 12px;
-                    }
-
-                    /* Información de producto para compra */
-                    .info-compra{
-                        margin-top: 10px;
-                        list-style: none;
-                        margin-left: 12px;
-                    }
-
-                    .info-compra li{
-                        font-size: 8px;
-                    }
-
-        /* Texto productos */
-        .texto-productos{
-            display: flex;
-            width: 100%;
-            height: 25px;
-            background-color: #212EC2;
-            border: 1px solid black;
-            border-left: 0;
-            border-right: 0;
-            margin-top: 20px;
-            justify-content: space-between;
-            left: 0;
-        }
-
-        .texto-productos h2{
-            color: white;
-            font-size: 12px;
-            margin: 5px 20px;
-        }
+/* Responsive 768px */
+@media (max-width: 768px){
+    .cont-graph h2{
+        margin: 1rem 0 1rem;
+        font-size: 19px;
     }
 
-    /* @Media 425px */
-    @media(max-width: 425px){
-        /* Número de usuarios actuales de tu Tienda Online */
-        .num-usuarios{
-            display: flex;
-            width: 100%;
-            height: 10%;
-            background-color: white;
-            border: 1px solid black;
-            margin-top: 30px;
-            align-items: start;
-            flex-direction: column;
-        }
-
-            /* Imagen Estadística */
-            .num-usuarios img{
-                width: 100%;
-                height: 100%;
-            }
-
-            /* Usuarios */
-            .usuarios{
-                display: flex;
-                width: 100%;
-                height: 35px;
-                background-color: #212EC2;
-                border: 1px solid black;
-                margin-bottom: 0px;
-                justify-content: space-between;
-                align-items: center;
-                left: 0;
-            }
-
-            .usuarios h2{
-                color: white;
-                font-size: 10px;
-                margin: 5px 20px;
-            }
-
-            .num{
-                display: flex;
-                width: 45px;
-                height: 25px;
-                background-color: white;
-                border: 1px solid black;
-                align-items: center;
-                justify-content: center;
-                margin-right: 20px;
-                margin-top: 0;
-            }
-
-            .num h2{
-                color: black;
-                font-size: 12px;
-            }
-
-        /* Visitas diarias de tu sitio web */
-        .visitas-diarias{
-            display: flex;
-            width: 100%;
-            height: 10%;
-            background-color: white;
-            border: 1px solid black;
-            margin-top: 60px;
-            flex-direction: column;
-            align-items: center;
-        }
-
-            /* Imagen Estadística */
-            .visitas-diarias img{
-                width: 100%;
-                height: 100%;
-            }
-
-            /* Visitas */
-            .visitas{
-                display: flex;
-                width: 100%;
-                height: 35px;
-                background-color: #212EC2;
-                border: 1px solid black;
-                align-items: center;
-                margin-bottom: 0px;
-                justify-content: space-between;
-            }
-
-            .visitas h2{
-                color: white;
-                font-size: 10px;
-                margin: 5px 20px;
-            }
-
-            .num h2{
-                color: black;
-                font-size: 12px;
-            }
-
-    /* Productos más vendidos esta semana */
-    .prod_mas_vendidos{
-        display: flex;
-        width: 100%;
-        height: 1020px;
-        background-color: #D9D9D9;
-        border: 1px solid black;
-        margin-top: 60px;
-        flex-direction: column;
+    .cont-width-small{
+        min-height: 500px;
+        padding: 4rem 2rem 4rem;
     }
 
-        /* Productos */
-        .productos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            height: 70%;
-            margin-top: 20px;
-        }
-
-            .cont-productos1{
-                display: none;
-            }
-
-            .cont-productos2{
-                display: none;
-            }
-
-            /* Contenedor Responsive productos 3*/
-            .cont-productos3{
-                display: flex;
-                width: 92.5%;
-                height: 60%;
-                margin-top: 125px;
-                align-self: center;
-                justify-content: center;
-                flex-direction: column;
-                margin-left: 20px;
-            }
-
-                /* Contenedor de producto */
-                .contenedor_de_producto{
-                    display: flex;
-                    height: 80%;
-                    width: 100%;
-                    justify-content: space-between;
-                    margin-bottom: 10px;
-                    align-items: center;
-                }
-
-                /* Contenedor de producto */
-                .contenedor_de_producto2{
-                    display: none;
-                }
-
-                    .contenedor_de_producto img{
-                        height: 90%;
-                        width: 35%;
-                        border: 1px solid black;
-                        margin-bottom: 0;
-                    }
-
-                    .info-prod{
-                        flex-direction: column;
-                        width: 100%;
-                        margin-bottom: 0;
-                    }
-
-                    /*Nombre producto */
-                    .nombre-prod{
-                        height: 50px;
-                        margin-top: 20px;
-                        align-items: center;
-                    }
-
-                    .nombre-prod h1{
-                        font-size: 10px;
-                        margin-left: 12px;
-                    }
-
-                    /* Información de producto para compra */
-                    .info-compra{
-                        margin-top: 0px;
-                        list-style: none;
-                        margin-left: 12px;
-                        margin-bottom: 0;
-                        margin-bottom: 30px;
-                    }
-
-                    .info-compra li{
-                        font-size: 8px;
-                        margin-top: 0;
-                    }
-
-        /* Texto productos */
-        .texto-productos{
-            display: flex;
-            width: 100%;
-            height: 35px;
-            background-color: #212EC2;
-            border: 1px solid black;
-            border-left: 0;
-            border-right: 0;
-            margin-top: 20px;
-            justify-content: space-between;
-            align-items: center;
-            left: 0;
-        }
-
-        .texto-productos h2{
-            color: white;
-            font-size: 10px;
-            margin: 5px 20px;
-        }
+    .cont-width-big{
+        min-height: 250px;
+        padding: 2rem;
     }
+}
+
+/* Responsive 425px */
+@media (max-width: 425px){
+    .cont-graph{
+        padding: 1rem;
+        margin: 1rem 0 0;
+    }
+
+    .row-graphics{
+        margin: 0;
+    }
+
+    .cont-graph h2{
+        font-size: 17px;
+        padding: 0 1rem 0;
+    }
+
+    .cont-width-big{
+        height: auto;
+    }
+
+    .chart-62{
+        height: 40%;
+        min-height: 120px;
+    }
+
+    .cont-width-small{
+        min-height: 300px;
+        padding: 0 1rem 0;
+    }
+
+    .chart-35{
+        width: 80%;
+        min-height: 30%;
+        margin: 0;
+    }
+}
