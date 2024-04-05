@@ -65,7 +65,7 @@
             <!-- Navegación de ítems Usuario -->
             <nav class="nav-usuario">
                 <ul class="lista_nav-usuario">
-                    <a href="{{ route("perfile.index") }}"><li class="item_nav-usuario">Mi perfil</li></a>
+                    <a href="{{ route("perfile.index") }}"><li class="item_nav-usuario">Mi Perfil</li></a>
                     <a href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
