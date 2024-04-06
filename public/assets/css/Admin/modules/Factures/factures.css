@@ -145,6 +145,10 @@
                 width: 49.5%;
             }
 
+            .opciones-factura-tabla-dato{
+                justify-content: space-around;
+            }
+
     /* Columnas datos de filas */
     .filas-datos{
         display: flex;
@@ -181,11 +185,6 @@
             margin-left: 7px;
         }
 
-            /* PDF */
-            .btn-pdf{
-                width: 22.5%;
-            }
-
             /* Ver */
             .btn-ver{
                 width: 22.5%;
@@ -214,9 +213,12 @@
                 height: 100%;
                 border-left: 0;
                 background-color: red;
+                border: none;
             }
 
-            .btn-ver, .btn-editar, .btn-eliminar{
+            .btn-editar, .btn-eliminar, .btn-ver{
+                width: 33%;
+                border: 1px solid black;
                 border-left: none;
             }
 
@@ -289,6 +291,11 @@
         .btn-factura a img{
             margin-top: 5px;
         }
+
+        .btn-editar, .btn-eliminar, .btn-ver{
+            width: 33%;
+            border: 1px solid black;
+        }
     }
 
     /* @media 768px */
@@ -347,8 +354,8 @@
             justify-content: space-between;
         }
 
-        .btn-editar, .btn-eliminar, .btn-pdf, .btn-ver{
-            width: 24.5%;
+        .btn-editar, .btn-eliminar, .btn-ver{
+            width: 33%;
             border: 1px solid black;
         }
 
