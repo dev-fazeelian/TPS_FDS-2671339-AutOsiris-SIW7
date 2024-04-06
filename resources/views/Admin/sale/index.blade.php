@@ -18,20 +18,6 @@
             <h1 class="titulo">Ventas</h1>
         </div>
 
-        <!-- Buscar ventas-->
-        <div class="filtros-busqueda">
-            <div class="ordenar_por">
-                <select name="ordenar_por" id="ordenar_por">
-                    <option value="Ordenar Por">Ordenar Por</option>
-                    <option value="A-Z">A-Z</option>
-                    <option value="Precio">Total</option>
-                </select>
-            </div>
-            <div class="barra_busqueda">
-                <input type="search" name="buscarVenta" id="barra_busqueda" placeholder="Buscar venta por su número">
-            </div>
-        </div>
-
         <!-- Contenedor Ventas -->
         <div class="cont-ventas">
             <!-- Contenedor Lista de ventas -->
