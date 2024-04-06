@@ -70,12 +70,12 @@
         <br><br>
         {{-- Reportes gráficos --}}
         {{-- Título --}}
-        <div class="titulo-ventana">
+        {{-- <div class="titulo-ventana">
             <h1 class="titulo">Reportes gráficos:</h1>
-        </div>
+        </div> --}}
 
         {{-- Gráficos --}}
-        <div class="sect-graphic-reports">
+        {{-- <div class="sect-graphic-reports">
             <div class="row-graphics">
                 <div class="cont-graph cont-width-small">
                     <h2>Productos más vendidos este mes: Enero</h2>
@@ -88,10 +88,10 @@
                     <canvas id="Chart2" class="chart-35"></canvas>
                 </div>
             </div>
-        </div>
-            <div class="row-graphics">
+        </div> --}}
+            {{-- <div class="row-graphics"> --}}
                 {{-- Gráfico: Cantidad de ventas esta semana --}}
-                <div class="cont-graph cont-width-big">
+                {{-- <div class="cont-graph cont-width-big">
                     <h2>Total de ventas este mes:</h2>
 
                     <canvas id="Chart3" class="chart-62"></canvas>
@@ -101,7 +101,7 @@
 
                     <canvas id="Chart4" class="chart-35"></canvas>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
