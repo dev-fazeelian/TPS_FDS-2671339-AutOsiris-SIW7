@@ -18,20 +18,6 @@
             <h1 class="titulo">Facturas</h1>
         </div>
 
-        <!-- Buscar factura-->
-        <div class="filtros-busqueda">
-            <div class="ordenar_por">
-                <select name="ordenar_por" id="ordenar_por">
-                    <option value="Ordenar Por">Ordenar Por</option>
-                    <option value="A-Z">A-Z</option>
-                    <option value="Precio">Precio</option>
-                </select>
-            </div>
-            <div class="barra_busqueda">
-                <input type="search" name="buscarFactura" id="barra_busqueda" placeholder="Buscar factura por su número">
-            </div>
-        </div>
-
         <!-- Contenedor Facturas -->
         <div class="cont-facturas">
             <!-- Contenedor Lista de Facturas -->
