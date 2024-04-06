@@ -68,13 +68,6 @@ document.getElementById("form-products").addEventListener("submit", function(eve
             return;
         }
 
-        // Descripción - Caracteres inválidos
-        var descripcionRegex = /^[a-zA-Z0-9]*$/;
-
-        if(!descripcionRegex.test(descripcion)){
-            alert("Por favor, ingresa una descripción de producto válida (Solo texto y números)")
-        }
-
         // Precio - Campo vacío
         if(precio === ""){
             alert("El precio de producto es un valor obligatorio");
